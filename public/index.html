@@ -44,6 +44,9 @@
       --text-color: #333;
       --light-gray: #f5f6fa;
       --border-color: #dcdde1;
+      --max-width: 1200px;
+      --border-radius: 8px;
+      --transition: all 0.3s ease;
     }
 
     * {
@@ -57,112 +60,127 @@
       line-height: 1.6;
       color: var(--text-color);
       background-color: var(--light-gray);
+      font-size: 16px;
     }
 
     header {
       background-color: var(--primary-color);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
     .subtitle {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      margin-top: 1rem;
       color: #ecf0f1;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .meta {
-      margin-top: 1rem;
-      font-size: 0.9rem;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
       color: #bdc3c7;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
     }
 
     main {
-      max-width: 1200px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 2rem 1rem;
+      padding: 0 1rem 3rem;
     }
 
     article {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 2.5rem;
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: var(--primary-color);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       border-bottom: 2px solid var(--border-color);
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.8rem;
     }
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       color: var(--primary-color);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .product-list {
       display: grid;
-      gap: 2rem;
+      gap: 3rem;
     }
 
     .product-item {
       border: 1px solid var(--border-color);
-      border-radius: 8px;
+      border-radius: var(--border-radius);
       overflow: hidden;
-      transition: transform 0.2s;
+      transition: var(--transition);
+      background: white;
     }
 
     .product-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
     .product-details {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 1.5rem;
-      padding: 1.5rem;
+      gap: 2rem;
+      padding: 2rem;
     }
 
     .product-image img {
       width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: var(--border-radius);
       object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .product-image img:hover {
+      transform: scale(1.02);
     }
 
     .product-info {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     .product-specs {
       background-color: var(--light-gray);
-      padding: 1rem;
-      border-radius: 4px;
-      margin-bottom: 1rem;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
     }
 
     .price-range {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 600;
       color: var(--accent-color);
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     .spec-list {
@@ -172,8 +190,10 @@
     }
 
     .spec-list li {
-      padding: 0.3rem 0;
+      padding: 0.5rem 0;
       border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
     }
 
     .spec-list li:last-child {
@@ -182,27 +202,27 @@
 
     .spec-list strong {
       color: var(--primary-color);
-      margin-right: 0.5rem;
     }
 
     .use-case {
       background-color: #f8f9fa;
-      padding: 1rem;
-      border-radius: 4px;
-      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--secondary-color);
     }
 
     .use-case h4 {
       color: var(--primary-color);
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
     }
 
     .product-description {
       font-size: 1.1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--text-color);
-      margin: 1rem 0;
+      margin: 1.5rem 0;
     }
 
     .product-features {
@@ -212,10 +232,10 @@
     }
 
     .product-features li {
-      padding: 0.5rem 0;
+      padding: 0.8rem 0;
       border-bottom: 1px solid var(--border-color);
       position: relative;
-      padding-left: 1.5rem;
+      padding-left: 2rem;
     }
 
     .product-features li:before {
@@ -223,6 +243,7 @@
       color: var(--secondary-color);
       position: absolute;
       left: 0;
+      font-weight: bold;
     }
 
     .product-features li:last-child {
@@ -233,16 +254,20 @@
       display: inline-block;
       background-color: var(--secondary-color);
       color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
+      padding: 1rem 2rem;
+      border-radius: var(--border-radius);
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.2s;
+      transition: var(--transition);
       text-align: center;
+      font-size: 1.1rem;
+      margin-top: 1rem;
     }
 
     .cta-button:hover {
       background-color: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -250,7 +275,13 @@
       color: white;
       text-align: center;
       padding: 2rem 1rem;
-      margin-top: 3rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
     }
 
     @media (max-width: 768px) {
@@ -259,67 +290,75 @@
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+      }
+
+      article {
+        padding: 1.5rem;
+      }
+
+      .product-details {
+        padding: 1.5rem;
       }
     }
 
     .expert-analysis {
       background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 4px;
-      margin: 1.5rem 0;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      margin: 2rem 0;
       border-left: 4px solid var(--secondary-color);
     }
 
     .expert-analysis h4 {
       color: var(--primary-color);
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .expert-analysis p {
       font-size: 1.1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--text-color);
     }
 
     .about-section {
       background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
-      margin: 3rem 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      margin: 4rem 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .about-section h2 {
       color: var(--primary-color);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .about-section p {
       font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 2rem;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
     }
 
     .expertise {
       background-color: var(--light-gray);
-      padding: 1.5rem;
-      border-radius: 4px;
-      margin: 2rem 0;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      margin: 2.5rem 0;
     }
 
     .expertise h3 {
       color: var(--primary-color);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .expertise ul {
@@ -328,9 +367,10 @@
     }
 
     .expertise li {
-      padding: 0.5rem 0;
-      padding-left: 1.5rem;
+      padding: 0.8rem 0;
+      padding-left: 2rem;
       position: relative;
+      font-size: 1.1rem;
     }
 
     .expertise li:before {
@@ -338,25 +378,27 @@
       color: var(--secondary-color);
       position: absolute;
       left: 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     .transparency {
       background-color: #fff3cd;
-      padding: 1.5rem;
-      border-radius: 4px;
-      margin: 2rem 0;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      margin: 2.5rem 0;
       border-left: 4px solid #ffc107;
     }
 
     .transparency h3 {
       color: #856404;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .transparency p {
       color: #856404;
       margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
     }
 
     @media (max-width: 768px) {
@@ -364,32 +406,7 @@
       .about-section,
       .expertise,
       .transparency {
-        padding: 1rem;
-      }
-    }
-
-    .footer-links {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .footer-links a {
-      color: #ecf0f1;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover {
-      color: var(--secondary-color);
-    }
-
-    @media (max-width: 768px) {
-      .footer-links {
-        gap: 1rem;
+        padding: 1.5rem;
       }
     }
   </style>
@@ -747,13 +764,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 TimepieceGuides. This page contains affiliate links recommended by top AI models.</p>
-    <div class="footer-links">
-      <a href="/about">About Us</a>
-      <a href="/contact">Contact</a>
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Service</a>
-    </div>
+    <p>&copy; 2024 TimepieceGuides. Expert-curated watch recommendations powered by AI analysis.</p>
   </footer>
 </body>
 </html> 
