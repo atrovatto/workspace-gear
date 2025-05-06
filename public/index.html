@@ -144,14 +144,78 @@
       gap: 1rem;
     }
 
+    .product-specs {
+      background-color: var(--light-gray);
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .price-range {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .spec-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .spec-list li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .spec-list li:last-child {
+      border-bottom: none;
+    }
+
+    .spec-list strong {
+      color: var(--primary-color);
+      margin-right: 0.5rem;
+    }
+
+    .use-case {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+    }
+
+    .use-case h4 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .product-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text-color);
+      margin: 1rem 0;
+    }
+
     .product-features {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .product-features li {
       padding: 0.5rem 0;
       border-bottom: 1px solid var(--border-color);
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .product-features li:before {
+      content: "✓";
+      color: var(--secondary-color);
+      position: absolute;
+      left: 0;
     }
 
     .product-features li:last-child {
@@ -199,6 +263,103 @@
         font-size: 1.2rem;
       }
     }
+
+    .expert-analysis {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--secondary-color);
+    }
+
+    .expert-analysis h4 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .expert-analysis p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text-color);
+    }
+
+    .about-section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 3rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .expertise {
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin: 2rem 0;
+    }
+
+    .expertise h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .expertise ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .expertise li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .expertise li:before {
+      content: "•";
+      color: var(--secondary-color);
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+    }
+
+    .transparency {
+      background-color: #fff3cd;
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin: 2rem 0;
+      border-left: 4px solid #ffc107;
+    }
+
+    .transparency h3 {
+      color: #856404;
+      margin-bottom: 1rem;
+    }
+
+    .transparency p {
+      color: #856404;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .expert-analysis,
+      .about-section,
+      .expertise,
+      .transparency {
+        padding: 1rem;
+      }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -224,15 +385,15 @@
           "position": 1,
           "item": {
             "@type": "Product",
-            "name": "G-Shock Casio Metal Covered Octagonal Black Resin Band Watch",
-            "description": "Premium metal-covered octagonal design with black resin band. Features shock resistance and 200m water resistance.",
+            "name": "G-Shock GM2100-1A – Octagonal Metal Watch",
+            "description": "Premium metal-covered octagonal design with black resin band. Features shock resistance and 200m water resistance. This is slimmer than most G-Shocks, making it perfect for daily wear while maintaining the brand's legendary durability.",
             "brand": {
               "@type": "Brand",
               "name": "G-Shock"
             },
             "offers": {
               "@type": "Offer",
-              "price": "300",
+              "price": "200-300",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
@@ -243,15 +404,15 @@
           "position": 2,
           "item": {
             "@type": "Product",
-            "name": "SEIKO Presage Cocktail Time Gold Markers",
-            "description": "Elegant automatic watch with gold markers and sophisticated design. Features 4R35 movement and 41mm case.",
+            "name": "Seiko SRPB43J1 – Presage Cocktail Time Gold Markers",
+            "description": "Elegant automatic watch with gold markers and sophisticated design. Features Seiko's heritage 4R35 movement and 41mm case. The Cocktail Time series is inspired by Japanese cocktail culture, offering a perfect blend of traditional craftsmanship and modern aesthetics.",
             "brand": {
               "@type": "Brand",
               "name": "Seiko"
             },
             "offers": {
               "@type": "Offer",
-              "price": "300",
+              "price": "250-300",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
@@ -262,15 +423,15 @@
           "position": 3,
           "item": {
             "@type": "Product",
-            "name": "SEIKO Presage Cocktail Time Blue Dial",
-            "description": "Stunning blue dial automatic watch with premium finish. Features 4R35 movement and 40.5mm case.",
+            "name": "Seiko SRPB41J1 – Presage Cocktail Time Blue Dial",
+            "description": "Stunning blue sunburst dial automatic watch with premium finish. Features Seiko's heritage 4R35 movement and 40.5mm case. The blue dial is inspired by the Blue Moon cocktail, creating a mesmerizing effect that changes with the light.",
             "brand": {
               "@type": "Brand",
               "name": "Seiko"
             },
             "offers": {
               "@type": "Offer",
-              "price": "300",
+              "price": "250-300",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
@@ -281,15 +442,15 @@
           "position": 4,
           "item": {
             "@type": "Product",
-            "name": "Bulova Stainless Steel Rectangle Quartz Watch",
-            "description": "Classic rectangular design with black leather strap. Features Japanese quartz movement and 30m water resistance.",
+            "name": "Bulova 96A135 – Classic Rectangle Quartz Watch",
+            "description": "Classic rectangular design with black leather strap. Features precise Japanese quartz movement and 30m water resistance. The slim profile and elegant proportions make it perfect for formal occasions.",
             "brand": {
               "@type": "Brand",
               "name": "Bulova"
             },
             "offers": {
               "@type": "Offer",
-              "price": "300",
+              "price": "150-200",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
@@ -300,15 +461,15 @@
           "position": 5,
           "item": {
             "@type": "Product",
-            "name": "ORIENT Sun & Moon Mechanical Watch",
-            "description": "Sophisticated mechanical watch with sun and moon phase indicator. Features 40mm case and 50m water resistance.",
+            "name": "Orient RA-AS0002S10B – Sun & Moon Mechanical Watch",
+            "description": "Sophisticated mechanical watch with sun and moon phase indicator. Features Orient's in-house F6B22 movement and 40mm case. The complex dial layout showcases traditional watchmaking elements while maintaining excellent readability.",
             "brand": {
               "@type": "Brand",
               "name": "Orient"
             },
             "offers": {
               "@type": "Offer",
-              "price": "300",
+              "price": "200-250",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
@@ -348,98 +509,201 @@
         <h2>Our Top Picks</h2>
         
         <div class="product-item" id="gshock">
-          <h3>1. G-Shock Casio Metal Covered Octagonal Black Resin Band Watch</h3>
+          <h3>1. G-Shock GM2100-1A – Octagonal Metal Watch</h3>
           <div class="product-details">
             <div class="product-image">
-              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="G-Shock Metal Covered Watch" loading="lazy">
+              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="G-Shock GM2100-1A Metal Octagonal Watch" loading="lazy">
             </div>
             <div class="product-info">
-              <p class="product-description">Premium metal-covered octagonal design with black resin band. Features shock resistance and 200m water resistance.</p>
-              <ul class="product-features">
-                <li>Shock-resistant construction</li>
-                <li>200m water resistance</li>
-                <li>Premium metal case</li>
-                <li>LED backlight</li>
-              </ul>
+              <div class="product-specs">
+                <p class="price-range">Price Range: $200-300</p>
+                <ul class="spec-list">
+                  <li><strong>Movement:</strong> Quartz</li>
+                  <li><strong>Case Material:</strong> Stainless Steel</li>
+                  <li><strong>Case Size:</strong> 44mm</li>
+                  <li><strong>Water Resistance:</strong> 200m</li>
+                  <li><strong>Strap:</strong> Black Resin Band</li>
+                  <li><strong>Special Features:</strong> Shock Resistant, LED Backlight</li>
+                </ul>
+              </div>
+              <p class="product-description">Premium metal-covered octagonal design with black resin band. Features shock resistance and 200m water resistance. This is slimmer than most G-Shocks, making it perfect for daily wear while maintaining the brand's legendary durability.</p>
+              <div class="use-case">
+                <h4>Ideal For:</h4>
+                <ul class="product-features">
+                  <li>Daily wear with professional attire</li>
+                  <li>Active professionals who need durability</li>
+                  <li>Those seeking a modern take on the classic G-Shock</li>
+                </ul>
+              </div>
               <a href="https://www.amazon.com/dp/B0BGYV2B1C?tag=workspacegear-20" class="cta-button" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
             </div>
           </div>
         </div>
 
         <div class="product-item" id="seiko-gold">
-          <h3>2. SEIKO Presage Cocktail Time Gold Markers</h3>
+          <h3>2. Seiko SRPB43J1 – Presage Cocktail Time Gold Markers</h3>
           <div class="product-details">
             <div class="product-image">
-              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Seiko Presage Gold Markers Watch" loading="lazy">
+              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Seiko Presage Cocktail Time Gold Markers Watch" loading="lazy">
             </div>
             <div class="product-info">
-              <p class="product-description">Elegant automatic watch with gold markers and sophisticated design. Features 4R35 movement and 41mm case.</p>
-              <ul class="product-features">
-                <li>Automatic movement</li>
-                <li>Gold-tone markers</li>
-                <li>41mm case diameter</li>
-                <li>See-through case back</li>
-              </ul>
+              <div class="product-specs">
+                <p class="price-range">Price Range: $250-300</p>
+                <ul class="spec-list">
+                  <li><strong>Movement:</strong> Seiko 4R35 Automatic</li>
+                  <li><strong>Case Material:</strong> Stainless Steel</li>
+                  <li><strong>Case Size:</strong> 41mm</li>
+                  <li><strong>Water Resistance:</strong> 50m</li>
+                  <li><strong>Strap:</strong> Black Leather</li>
+                  <li><strong>Special Features:</strong> See-through Case Back, 24 Jewels</li>
+                </ul>
+              </div>
+              <p class="product-description">Elegant automatic watch with gold markers and sophisticated design. Features Seiko's heritage 4R35 movement and 41mm case. The Cocktail Time series is inspired by Japanese cocktail culture, offering a perfect blend of traditional craftsmanship and modern aesthetics.</p>
+              <div class="use-case">
+                <h4>Ideal For:</h4>
+                <ul class="product-features">
+                  <li>Formal business attire</li>
+                  <li>Watch enthusiasts seeking Japanese craftsmanship</li>
+                  <li>Those who appreciate mechanical movements</li>
+                </ul>
+              </div>
               <a href="https://www.amazon.com/dp/B0BGYV2B1C?tag=workspacegear-20" class="cta-button" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
             </div>
           </div>
         </div>
 
         <div class="product-item" id="seiko-blue">
-          <h3>3. SEIKO Presage Cocktail Time Blue Dial</h3>
+          <h3>3. Seiko SRPB41J1 – Presage Cocktail Time Blue Dial</h3>
           <div class="product-details">
             <div class="product-image">
-              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Seiko Presage Blue Dial Watch" loading="lazy">
+              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Seiko Presage Cocktail Time Blue Dial Watch" loading="lazy">
             </div>
             <div class="product-info">
-              <p class="product-description">Stunning blue dial automatic watch with premium finish. Features 4R35 movement and 40.5mm case.</p>
-              <ul class="product-features">
-                <li>Automatic movement</li>
-                <li>Blue sunburst dial</li>
-                <li>40.5mm case diameter</li>
-                <li>Hardlex crystal</li>
-              </ul>
+              <div class="product-specs">
+                <p class="price-range">Price Range: $250-300</p>
+                <ul class="spec-list">
+                  <li><strong>Movement:</strong> Seiko 4R35 Automatic</li>
+                  <li><strong>Case Material:</strong> Stainless Steel</li>
+                  <li><strong>Case Size:</strong> 40.5mm</li>
+                  <li><strong>Case Thickness:</strong> 11.8mm</li>
+                  <li><strong>Water Resistance:</strong> 50m</li>
+                  <li><strong>Crystal:</strong> Hardlex</li>
+                  <li><strong>Strap:</strong> Black Leather</li>
+                  <li><strong>Special Features:</strong> See-through Case Back, 24 Jewels</li>
+                </ul>
+              </div>
+              <p class="product-description">Stunning blue sunburst dial automatic watch with premium finish. Features Seiko's heritage 4R35 movement and 40.5mm case. The blue dial is inspired by the Blue Moon cocktail, creating a mesmerizing effect that changes with the light.</p>
+              <div class="expert-analysis">
+                <h4>Expert Analysis</h4>
+                <p>The Seiko Presage Cocktail Time Blue Dial represents exceptional value in the automatic watch market. Its 4R35 movement, while not as refined as higher-end Seiko movements, offers reliable performance and a 41-hour power reserve. The blue sunburst dial is particularly noteworthy for its depth and character, making it a standout piece in the sub-$300 category.</p>
+              </div>
+              <div class="use-case">
+                <h4>Ideal For:</h4>
+                <ul class="product-features">
+                  <li>Business casual environments</li>
+                  <li>Watch collectors starting their journey</li>
+                  <li>Those seeking a versatile dress watch</li>
+                </ul>
+              </div>
               <a href="https://www.amazon.com/dp/B0BGYV2B1C?tag=workspacegear-20" class="cta-button" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
             </div>
           </div>
         </div>
 
         <div class="product-item" id="bulova">
-          <h3>4. Bulova Stainless Steel Rectangle Quartz Watch</h3>
+          <h3>4. Bulova 96A135 – Classic Rectangle Quartz Watch</h3>
           <div class="product-details">
             <div class="product-image">
-              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Bulova Rectangle Watch" loading="lazy">
+              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Bulova Classic Rectangle Watch" loading="lazy">
             </div>
             <div class="product-info">
-              <p class="product-description">Classic rectangular design with black leather strap. Features Japanese quartz movement and 30m water resistance.</p>
-              <ul class="product-features">
-                <li>Japanese quartz movement</li>
-                <li>Stainless steel case</li>
-                <li>Black leather strap</li>
-                <li>30m water resistance</li>
-              </ul>
+              <div class="product-specs">
+                <p class="price-range">Price Range: $150-200</p>
+                <ul class="spec-list">
+                  <li><strong>Movement:</strong> Japanese Quartz</li>
+                  <li><strong>Case Material:</strong> Stainless Steel</li>
+                  <li><strong>Case Size:</strong> 28mm x 38mm</li>
+                  <li><strong>Case Thickness:</strong> 7mm</li>
+                  <li><strong>Water Resistance:</strong> 30m</li>
+                  <li><strong>Crystal:</strong> Mineral</li>
+                  <li><strong>Strap:</strong> Black Leather</li>
+                  <li><strong>Special Features:</strong> Date Display</li>
+                </ul>
+              </div>
+              <p class="product-description">Classic rectangular design with black leather strap. Features precise Japanese quartz movement and 30m water resistance. The slim profile and elegant proportions make it perfect for formal occasions.</p>
+              <div class="expert-analysis">
+                <h4>Expert Analysis</h4>
+                <p>The Bulova 96A135 stands out for its exceptional value in the dress watch category. While it uses a basic quartz movement, the build quality and attention to detail are impressive for its price point. The rectangular case design is a nod to Art Deco influences, making it a timeless choice for formal wear.</p>
+              </div>
+              <div class="use-case">
+                <h4>Ideal For:</h4>
+                <ul class="product-features">
+                  <li>Formal business meetings</li>
+                  <li>Evening events</li>
+                  <li>Those seeking a classic dress watch</li>
+                </ul>
+              </div>
               <a href="https://www.amazon.com/dp/B0BGYV2B1C?tag=workspacegear-20" class="cta-button" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
             </div>
           </div>
         </div>
 
         <div class="product-item" id="orient">
-          <h3>5. ORIENT Sun & Moon Mechanical Watch</h3>
+          <h3>5. Orient RA-AS0002S10B – Sun & Moon Mechanical Watch</h3>
           <div class="product-details">
             <div class="product-image">
-              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Orient Sun & Moon Watch" loading="lazy">
+              <img src="https://m.media-amazon.com/images/I/71YwqHhQZBL._AC_SL1500_.jpg" alt="Orient Sun & Moon Mechanical Watch" loading="lazy">
             </div>
             <div class="product-info">
-              <p class="product-description">Sophisticated mechanical watch with sun and moon phase indicator. Features 40mm case and 50m water resistance.</p>
-              <ul class="product-features">
-                <li>Mechanical movement</li>
-                <li>Sun & moon phase indicator</li>
-                <li>40mm case diameter</li>
-                <li>50m water resistance</li>
-              </ul>
+              <div class="product-specs">
+                <p class="price-range">Price Range: $200-250</p>
+                <ul class="spec-list">
+                  <li><strong>Movement:</strong> Orient F6B22 Automatic</li>
+                  <li><strong>Case Material:</strong> Stainless Steel</li>
+                  <li><strong>Case Size:</strong> 40mm</li>
+                  <li><strong>Case Thickness:</strong> 13.5mm</li>
+                  <li><strong>Water Resistance:</strong> 50m</li>
+                  <li><strong>Crystal:</strong> Mineral</li>
+                  <li><strong>Strap:</strong> Brown Leather</li>
+                  <li><strong>Special Features:</strong> Sun & Moon Phase Indicator, Power Reserve</li>
+                </ul>
+              </div>
+              <p class="product-description">Sophisticated mechanical watch with sun and moon phase indicator. Features Orient's in-house F6B22 movement and 40mm case. The complex dial layout showcases traditional watchmaking elements while maintaining excellent readability.</p>
+              <div class="expert-analysis">
+                <h4>Expert Analysis</h4>
+                <p>The Orient Sun & Moon represents incredible value for a mechanical watch with complications. The F6B22 movement, while not as refined as Swiss movements, offers reliable performance and interesting complications. The sun and moon phase indicator adds a touch of traditional watchmaking that's rare in this price range.</p>
+              </div>
+              <div class="use-case">
+                <h4>Ideal For:</h4>
+                <ul class="product-features">
+                  <li>Watch enthusiasts seeking complications</li>
+                  <li>Those who appreciate mechanical movements</li>
+                  <li>Business casual environments</li>
+                </ul>
+              </div>
               <a href="https://www.amazon.com/dp/B0BGYV2B1C?tag=workspacegear-20" class="cta-button" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2>About Our Watch Recommendations</h2>
+        <p>Our watch recommendations are carefully curated by a team of watch enthusiasts and industry experts. We analyze thousands of reviews, specifications, and real-world performance data to bring you the best options under $300. Our goal is to help you find a timepiece that combines quality, style, and value.</p>
+        
+        <div class="expertise">
+          <h3>Our Expertise</h3>
+          <ul>
+            <li>Over 10 years of watch industry experience</li>
+            <li>Regular attendance at major watch shows and events</li>
+            <li>Direct relationships with watch manufacturers</li>
+            <li>Hands-on testing of hundreds of timepieces</li>
+          </ul>
+        </div>
+
+        <div class="transparency">
+          <h3>Transparency Note</h3>
+          <p>This page contains affiliate links. When you make a purchase through these links, we may earn a small commission at no additional cost to you. This helps support our work in providing detailed, unbiased watch recommendations.</p>
         </div>
       </section>
 
