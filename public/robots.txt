@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://your-domain.com/sitemap.xml 
+
+Sitemap: https://www.timepieceguides.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/ 
